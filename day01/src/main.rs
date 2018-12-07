@@ -39,7 +39,7 @@ fn main() {
     assert_eq!(part2(&[-6, 3, 8, 5, -6]), 5);
     assert_eq!(part2(&[7, 7, -2, -7, -4]), 14);
 
-    let contents = fs::read_to_string("src/day1.txt").expect("Unable to read file");
+    let contents = fs::read_to_string("src/input.txt").expect("Unable to read file");
     let input = parse_input(&contents);
     println!("Part 1: {}", part1(&input));
     println!("Part 2: {}", part2(&input));
