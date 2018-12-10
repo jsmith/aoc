@@ -29,13 +29,18 @@ fn part1(input: &str) -> isize {
     return twos * threes;
 }
 
+fn part2(input: &str) -> usize {
+    let counts: Vec<_> = input
+        .lines()
+        .collect();
+
+    let length = counts[0].len();
+    return length;
+}
+
 fn main() {
-    // assert_eq!(part1("abcdef"), 0);
-    // assert_eq!(part1("bababc"), 1);
-    // assert_eq!(part1("abbcde"), 0);
-    // assert_eq!(part1("abcccd"), 0);
-    // assert_eq!(part1("aabcdd"), 0);
     assert_eq!(part1("abcdef\nbababc\nabbcde\nabcccd\naabcdd\nabcdee\nababab"), 12);
     let _contents = fs::read_to_string("src/input.txt").expect("Unable to read file");
     println!("Part 1: {}", part1(&_contents));
+    println!("Part 2: {}", part2(&_contents));
 }
