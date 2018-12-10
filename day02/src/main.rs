@@ -6,7 +6,6 @@ fn count(line: &str) -> HashMap<char, isize> {
     for c in line.chars() {
         *counts.entry(c).or_insert(0) += 1;
     }
-
     return counts;
 }
 
