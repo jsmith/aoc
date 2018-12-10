@@ -33,7 +33,6 @@ fn part2(input: &str) -> usize {
     let counts: Vec<_> = input
         .lines()
         .collect();
-
     let length = counts[0].len();
     return length;
 }
